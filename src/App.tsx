@@ -71,8 +71,8 @@ function App() {
   }
 
   return (
-    <div className="h-screen w-screen bg-neutral-800 flex justify-center items-center">
-        <div className="relative h-[450px] w-[400px] bg-neutral-800 p-4 flex flex-col rounded-2xl shadow shadow-neutral-400 border border-neutral-400 text-white">
+    <div className="h-screen w-screen bg-neutral-900 flex justify-center items-center">
+        <div className="relative h-[450px] w-[400px] bg-neutral-800 p-4 flex flex-col rounded-2xl shadow-2xl border border-black text-white">
             <label className="absolute right-5 top-2 font-bold text-[12px] w-fit">{previewValue ? previewValue.toString() + inMemoryOperation : ""}</label>
             <section className="h-14 w-full shadow-xs flex flex-col justify-center items-end pr-3 pt-1 rounded-2xl hover:border hover:border-white" onClick={async () => {navigator.clipboard.writeText(screenValue.toString()); alert("Valor copiado para area de transferencia")}}>
                 <label className="h-full font-bold w-fit text-[30px] text-center">{screenValue.toString()}</label>
